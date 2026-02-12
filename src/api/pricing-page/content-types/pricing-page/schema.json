@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricing_pages",
+  "info": {
+    "singularName": "pricing-page",
+    "pluralName": "pricing-pages",
+    "displayName": "Pricing page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": {
+      "type": "string"
+    },
+    "hero_subtitle": {
+      "type": "string"
+    },
+    "plans_highlights": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    }
+  }
+}

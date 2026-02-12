@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_flags",
+  "info": {
+    "singularName": "feature-flag",
+    "pluralName": "feature-flags",
+    "displayName": "Feature flag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "unique": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "rules": {
+      "type": "json"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

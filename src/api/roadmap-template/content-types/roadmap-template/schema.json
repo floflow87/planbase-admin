@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roadmap_templates",
+  "info": {
+    "singularName": "roadmap-template",
+    "pluralName": "roadmap-templates",
+    "displayName": "Roadmap template"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "default_view": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "gantt",
+        "phases",
+        "outcomes"
+      ]
+    },
+    "view_defaults": {
+      "type": "json",
+      "required": true
+    },
+    "items": {
+      "type": "json"
+    },
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "onboarding_steps",
+  "info": {
+    "singularName": "onboarding-step",
+    "pluralName": "onboarding-steps",
+    "displayName": "Onboarding steps"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "unique": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "module": {
+      "type": "enumeration",
+      "enum": [
+        "crm",
+        "projects",
+        "cdc",
+        "product",
+        "roadmap",
+        "okr",
+        "docs",
+        "time",
+        "profitability",
+        "settings"
+      ]
+    },
+    "target": {
+      "type": "string"
+    },
+    "order": {
+      "type": "biginteger"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

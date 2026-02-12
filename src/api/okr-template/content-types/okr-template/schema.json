@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "okr_templates",
+  "info": {
+    "singularName": "okr-template",
+    "pluralName": "okr-templates",
+    "displayName": "OKR templates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "objective_types": {
+      "type": "json"
+    },
+    "tree_defaults": {
+      "type": "json",
+      "required": true
+    },
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

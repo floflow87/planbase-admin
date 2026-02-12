@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_entries",
+  "info": {
+    "singularName": "faq-entry",
+    "pluralName": "faq-entries",
+    "displayName": "FAQ entries"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "module": {
+      "type": "enumeration",
+      "enum": [
+        "project",
+        "crm",
+        "product",
+        "roadmap",
+        "task",
+        "whiteboards",
+        "notes",
+        "docs",
+        "profitability",
+        "time",
+        "okr",
+        "settings",
+        "cdc"
+      ]
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true
+    },
+    "order": {
+      "type": "biginteger"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

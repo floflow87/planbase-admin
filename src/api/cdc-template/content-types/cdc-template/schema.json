@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cdc_templates",
+  "info": {
+    "singularName": "cdc-template",
+    "pluralName": "cdc-templates",
+    "displayName": "CDC template"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "items": {
+      "type": "json"
+    },
+    "is_default": {
+      "type": "boolean",
+      "default": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Application SaaS",
+        "E-commerce",
+        "Site vitrine",
+        "Design",
+        "Conseil",
+        "Intégration",
+        "Formation",
+        "CPO / Product",
+        "Autre"
+      ]
+    }
+  }
+}

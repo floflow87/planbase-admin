@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "account_actions",
+  "info": {
+    "singularName": "account-action",
+    "pluralName": "account-actions",
+    "displayName": "Account actions"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "target_type": {
+      "type": "enumeration",
+      "enum": [
+        "user",
+        "organization"
+      ]
+    },
+    "target_id": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "status_user": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "applied",
+        "failed"
+      ]
+    },
+    "applied_at": {
+      "type": "date"
+    },
+    "meta_data": {
+      "type": "json"
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "block_user",
+        "unblock_user",
+        "delete_user",
+        "disable_org",
+        "enable_org"
+      ]
+    }
+  }
+}
